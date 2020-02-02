@@ -55,7 +55,7 @@ int getMaxArea(int* hist, int n){
         push(&s, i);
         else
         {
-            while(!empty(s) && hist[peek(s)] > hist[i])
+            while(!empty(s) && hist[peek(s)] >= hist[i])
             {
                 int x = hist[peek(s)];
                 pop(&s);
